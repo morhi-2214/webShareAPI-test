@@ -19,11 +19,11 @@
 </template>
 
 <script>
-let isSupportedWebShareAPI = !!navigator.share;
+// let isSupportedWebShareAPI = !!navigator.share;
 export default {
   data() {
     return {
-      isSupportedWebShareAPI,
+      isSupportedWebShareAPI: true,
       values: [
         {
           name: "タイトルのみ",

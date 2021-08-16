@@ -19,11 +19,10 @@
 </template>
 
 <script>
-let isSupportedWebShareAPI = !!navigator.share;
 export default {
   data() {
     return {
-      isSupportedWebShareAPI,
+      isSupportedWebShareAPI: !!navigator.share,
       values: [
         {
           name: "タイトルのみ",
@@ -62,16 +61,14 @@ export default {
   },
   methods: {
     handleShareClick(option) {
-      if (navigator.share) {
-        navigator
-          .share(option)
-          .then((p) => {
-            console.log("success!", p);
-          })
-          .catch((e) => {
-            console.log("error!", e);
-          });
-      }
+      navigator
+        .share(option)
+        .then((p) => {
+          console.log("success!", p);
+        })
+        .catch((e) => {
+          console.log("error!", e);
+        });
     },
   },
 };

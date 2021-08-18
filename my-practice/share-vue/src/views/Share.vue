@@ -29,6 +29,7 @@ export default {
           title: "Share title",
           text: "Share content",
           url: "https://demo.jp/demo",
+          files: "../assets/gyudon.jpg",
         });
         console.log("Successful share");
       } catch (err) {

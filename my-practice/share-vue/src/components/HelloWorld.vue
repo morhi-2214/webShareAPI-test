@@ -26,11 +26,11 @@ export default {
       values: [
         {
           name: "タイトルのみ",
-          option: { title: "Hello WebShareAPI!" },
+          option: { title: "Title" },
         },
         {
           name: "テキストのみ",
-          option: { text: "Hello WebShareAPI!(Text)" },
+          option: { text: "Text" },
         },
         {
           name: "このサイトのURLのみ",
@@ -55,6 +55,31 @@ export default {
         {
           name: "タイトルとテキストとURL",
           option: { title: "Title", text: "Text", url: location.href },
+        },
+        {
+          name: "画像ファイル",
+          option: { files: "../assets/gyudon.jpg" },
+        },
+        {
+          name: "画像ファイルとタイトル",
+          option: { title: "Title", files: "../assets/gyudon.jpg" },
+        },
+        {
+          name: "画像ファイルとテキスト",
+          option: { text: "Text", files: "../assets/gyudon.jpg" },
+        },
+        {
+          name: "画像ファイルとURL",
+          option: { url: location.href, files: "../assets/gyudon.jpg" },
+        },
+        {
+          name: "画像ファイルとタイトルとテキストとURL",
+          option: {
+            title: "Title",
+            text: "Text",
+            url: location.href,
+            files: "../assets/gyudon.jpg",
+          },
         },
       ],
     };

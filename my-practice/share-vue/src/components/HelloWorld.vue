@@ -87,6 +87,18 @@ export default {
             text: "WebShareAPIのお試し https://qiita.com/kjugk/items/921be89431cf156bb700",
           },
         },
+        {
+          name: "テキストとしてタイトルとURLを送ってみる",
+          option: {
+            text: "WebShareAPIのお試し https://qiita.com/kjugk/items/921be89431cf156bb700",
+          },
+        },
+        {
+          name: "テキストとして現在のページURLを送ってみる",
+          option: {
+            text: "WebShareAPIのお試し" + location.href,
+          },
+        },
       ],
     };
   },

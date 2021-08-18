@@ -58,19 +58,19 @@ export default {
         },
         {
           name: "画像ファイル",
-          option: { files: "../assets/gyudon.jpg" },
+          option: { files: ["../assets/gyudon.jpg"] },
         },
         {
           name: "画像ファイルとタイトル",
-          option: { title: "Title", files: "../assets/gyudon.jpg" },
+          option: { title: "Title", files: ["../assets/gyudon.jpg"] },
         },
         {
           name: "画像ファイルとテキスト",
-          option: { text: "Text", files: "../assets/gyudon.jpg" },
+          option: { text: "Text", files: ["../assets/gyudon.jpg"] },
         },
         {
           name: "画像ファイルとURL",
-          option: { url: location.href, files: "../assets/gyudon.jpg" },
+          option: { url: location.href, files: ["../assets/gyudon.jpg"] },
         },
         {
           name: "画像ファイルとタイトルとテキストとURL",
@@ -78,7 +78,13 @@ export default {
             title: "Title",
             text: "Text",
             url: location.href,
-            files: "../assets/gyudon.jpg",
+            files: ["../assets/gyudon.jpg"],
+          },
+        },
+        {
+          name: "テキストとしてタイトルとURLを送ってみる",
+          option: {
+            text: "ページタイトルページタイトル https://hoge.jp/hoge/fuga/",
           },
         },
       ],

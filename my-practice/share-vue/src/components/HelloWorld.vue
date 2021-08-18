@@ -84,7 +84,7 @@ export default {
         {
           name: "テキストとしてタイトルとURLを送ってみる",
           option: {
-            text: "ページタイトルページタイトル https://hoge.jp/hoge/fuga/",
+            text: "WebShareAPIのお試し https://qiita.com/kjugk/items/921be89431cf156bb700",
           },
         },
       ],
